@@ -12,10 +12,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      appetizers = [],
-      entrees = [],
-      desserts = []
+      appetizers: [],
+      entrees: [],
+      desserts: []
     }
+  }
 
 // Lifecycle method
 // Fetch from http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu.

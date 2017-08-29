@@ -9,6 +9,14 @@ export default class BaseLayout extends Component {
       titleStyle (font, Arizonia. size, 150) for 'restaurant-name'
       subtitleStyle (font, Raleway. size, 80) for 'subtitle'
       */}
+      let titleStyle = {
+        "fontFamily": "Arizonia",
+        "fontSize": "150"
+      }
+      let subtitleStyle = {
+        "fontFamily": "Raleway",
+        "fontSize": "80"
+      }
 
     {/*
       Create an inline.
@@ -22,6 +30,16 @@ export default class BaseLayout extends Component {
       "boxShadow": "1px 17px 5px 0px rgba(0, 0, 0, 0.75)",
       "fontFamily": "decorative",
       */}
+      let headerStyle = {
+        "textAlign": "center",
+        "height": "30vw",
+        "color": "#fff",
+        "backgroundImage": "url(http://www.joysthaifood.com/wp-content/uploads/2016/03/Thai-fish-Lemon-Soup.jpg)",
+        "backgroundSize": "cover",
+        "backgroundPosition": "center",
+        "boxShadow": "1px 17px 5px 0px rgba(0, 0, 0, 0.75)",
+        "fontFamily": "decorative",
+      }
 
     return (
       <div className="container-fluid nav">
@@ -44,6 +62,8 @@ export default class BaseLayout extends Component {
             {/*
                 >>>> CHILDREN COMPONENTS <<<<
               */}
+              {this.props.children}
+
         <footer>
           <span className="footer-title">Majestic Thai </span><span>100 Main Street, Spartanburg, SC, 29302 | (864) 898-9999</span>
         </footer>

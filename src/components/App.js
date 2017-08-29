@@ -32,9 +32,10 @@ componentWillMount() {
   })
   .then((data) => {
     let menu = data[0];
-    let appetizers = menu.appetizers;
-    let entrees = menu.entrees;
-    let desserts = menu.desserts;
+    let appetizers = menu.Appetizers;
+    let entrees = menu.Entrees;
+    let desserts = menu.Desserts;
+    console.log(appetizers);
     this.setState({appetizers: appetizers, entrees: entrees, desserts: desserts})
 
   });
